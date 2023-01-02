@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSkiPass.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="freestylepark.svg"
+                SemanticProperties.Description="FreeStylePark Emblem"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Editor
+                Text=""
+                x:FieldModifier="public"
+                x:Name="Label"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"
+                WidthRequest="180"
+                />
+
+            <Label
+                Text="Приложите карту, чтобы счмтать её номер"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Приложите карту, чтобы счмтать её номер"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="GetBalance"
+                Text="Узнеать баланс"
+                Clicked="OnGetBalanceClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="TrainingRefill"
+                Text="Детский склон 2 часа"
+                SemanticProperties.Hint="Training Refill"
+                Clicked="OnTrainingRefillClicked"
+                HorizontalOptions="Center" />
+            <Label
+                Text="Баланс"
+                x:FieldModifier="public"
+                x:Name="Bal"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <HorizontalStackLayout>
+                <Label
+                Text="Введите сумму для пополнения"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="14"
+                HorizontalOptions="Start" />
+                <Editor
+                Text=""
+                x:Name="Sum"
+                HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+            <Button
+                x:Name="Refill"
+                Text="Пополнимть"
+                SemanticProperties.Hint="Refill"
+                Clicked="OnRefillClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
