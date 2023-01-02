@@ -26,19 +26,19 @@
                 />
 
             <Label
-                Text="Приложите карту, чтобы счмтать её номер"
+                Text="Приложите карту, чтобы считать её номер"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Приложите карту, чтобы счмтать её номер"
+                SemanticProperties.Description="Приложите карту, чтобы считать её номер"
                 FontSize="18"
                 HorizontalOptions="Center" />
             <Button
                 x:Name="GetBalance"
-                Text="Узнеать баланс"
+                Text="Узнать баланс"
                 Clicked="OnGetBalanceClicked"
                 HorizontalOptions="Center" />
             <Button
                 x:Name="TrainingRefill"
-                Text="Детский склон 2 часа"
+                Text="Детская школа"
                 SemanticProperties.Hint="Training Refill"
                 Clicked="OnTrainingRefillClicked"
                 HorizontalOptions="Center" />
