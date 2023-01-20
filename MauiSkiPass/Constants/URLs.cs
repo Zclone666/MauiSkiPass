@@ -12,5 +12,6 @@ namespace MauiSkiPass.Constants
         public static string GetB = "CheckSkipass";
         public static string AddS = "AddSum";
         public static string AddSrv = "AddServiceToUser";
+        public static string GetSrv = "GetUsersAbonements";     
     }
 }

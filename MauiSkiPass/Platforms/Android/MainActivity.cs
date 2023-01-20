@@ -139,6 +139,7 @@ public class MainActivity : MauiAppCompatActivity
         global::MauiSkiPass.MainActivity.nfc_tag = String.IsNullOrEmpty(nfc_tag) ? "" : nfc_tag.Substring(0, 8);
         vr.Tag = nfc_tag;
         vr.MainP.Label.Text = nfc_tag.Substring(0,8);
+        vr.MainP.Bal.Text = "";
        // MauiApp Ma = MauiProgram.CreateMauiApp();
        // Ma
        // MainPage mp=new MainPage();
